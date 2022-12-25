@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# Есть список песен группы Depeche Mode со временем звучания с точносттю до долей минут
+# Есть список песен группы Depeche Mode со временем звучания с точностью до долей минут
 
 violator_songs_list = [
     ['World in My Eyes', 4.86],
@@ -19,8 +19,11 @@ violator_songs_list = [
 #   Три песни звучат ХХХ минут
 # Обратите внимание, что делать много вычислений внутри print() - плохой стиль.
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
-
-# TODO здесь ваш код
+halo_duration = violator_songs_list[3][1]
+enjoy_duration = violator_songs_list[5][1]
+clean_duration = violator_songs_list[8][1]
+songs_duration = halo_duration + enjoy_duration + clean_duration
+print('Three songs sound', round(songs_duration, 2), 'minutes')
 
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
@@ -38,4 +41,9 @@ violator_songs_dict = {
 # распечатайте общее время звучания трех песен: 'Sweetest Perfection', 'Policy of Truth' и 'Blue Dress'
 #   А другие три песни звучат ХХХ минут
 
-# TODO здесь ваш код
+sweet_prefection_duration = violator_songs_dict['Sweetest Perfection']
+policy_of_truth_duration = violator_songs_dict['Policy of Truth']
+blue_dress_duration = violator_songs_dict['Blue Dress']
+another_songs_duration = sweet_prefection_duration + policy_of_truth_duration + blue_dress_duration
+print('Another three songs sound', round(another_songs_duration, 2), 'minutes')
+
