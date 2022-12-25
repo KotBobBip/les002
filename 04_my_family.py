@@ -22,4 +22,4 @@ print('Рост Ани', my_family_height[1][1])
 print('Рост Тёмы', my_family_height[2][1])
 # Выведите на консоль общий рост вашей семьи как сумму ростов всех членов
 #   Общий рост моей семьи - ХХ см
-print('Лбщий рост семьи', my_family_height[0][1] + my_family_height[1][1] + my_family_height[2][1])
+print('Общий рост семьи', my_family_height[0][1] + my_family_height[1][1] + my_family_height[2][1])
